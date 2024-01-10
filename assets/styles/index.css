@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* .container {
+  width: 100%;
+  max-width: 70rem;
+} */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+}
+
+.btn {
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  font-family: "Public Sans", sans-serif;
+  cursor: pointer;
+  display: block;
+}
+
+.hero_bg_img { 
+    background-image: url(../images/bg-intro-desktop.svg);
+}
+
+.hero_section { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_content h1 { 
+    max-width: 15rem;
+}
+
+.cards_section {
+    display: flex;
+    justify-content: center;
+}
+
+.hero_content p { 
+    max-width: 25rem;
+    margin: 14px 0 14px 0;
+}
+
+.hero_content { 
+    margin: 112px 0 0 163px;
+}
+
+/* .card p { 
+    width: 80%;
+}
+
+.card h3 { 
+    margin: 30px 0 20px 0;
+}
+
+.w-45 { 
+    width: 45%;
+    margin-top: 15px;
+}
+
+.cards_container { 
+    display: flex;
+    margin-top: 35px;
+} */
+
+
+.cards_section {
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+}
+
+.article_section { 
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero_content {
+    text-align: center;
+    margin-top: 30px; 
+}
+
+.hero_content p {
+    max-width: 100%;
+    margin: 14px 0;
+}
+
+.cards_container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+}
+
+.article_cards_conatiner { 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+}
+
+.card {
+    max-width: 300px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+}
+
+.article_card { 
+    max-width: 280px; 
+  
+}
+.card img {
+    max-width: 100%; 
+}
+
+.article_card img {
+    max-width: 100%;
+    height: 200px; 
+}
+
+.card h3 {
+    margin: 20px 0 10px 0;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+.footer_section { 
+    background-color: hsl(233, 26%, 24%);
+}
+
+.footer_info span { 
+    color: white;
+}
+
+.footer_info { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.icons-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.footer_btn { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.footer_section { 
+    display: flex;
+    justify-content: center;
+    padding: 45px 0 45px 0; 
+}
+
+.icons img { 
+    margin-right: 7px;
+}
+.footer_wrapper { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+@media (min-width: 1200px) {
+    .card {
+        flex: 0 0 calc(25% - 20px);
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    gap: 0;
+    align-items: center;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  #hamerburgerIcon {
+    display: block;
+  }
+
+  #closeIcon {
+    display: none;
+    cursor: pointer;
+  }
+
+  .d-sm-none {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  #hamerburgerIcon {
+    display: none !important;
+  }
+
+  #closeIcon {
+    display: none !important ;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 769px) {
+  nav {
+    justify-content: space-around;
+  }
+
+  .footer_wrapper { 
+    justify-content: space-around;
+
+  }
+}
+
+@media (max-width: 768px) {
+    .footer_wrapper { 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_info { 
+        align-items: center;
+        margin-top: 16px;
+    }
+
+    .footer_btn { 
+        margin-top: 16px;
+
+    }
+    
+}
